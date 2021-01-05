@@ -1,0 +1,1579 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:48.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Login as a sales manger",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;login-as-a-sales-manger",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user logs in",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 12,
+            "name": "user should see dashboard page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:48.918Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Parametrized login as sales manager",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "user logs in as a \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "user should see dashboard page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:48.968Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Parametrized login as store manager",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "user should see dashboard page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.029Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Parametrized login as driver",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 26,
+            "name": "user logs in as a \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 27,
+            "name": "user should see dashboard page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.079Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Parametrized login as sales manager",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 37,
+            "name": "user logs in as a \"sales manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sales manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 38,
+            "name": "user should see \"Dashboard\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          },
+          {
+            "name": "@with_two_columns"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.126Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Parametrized login as store manager",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 37,
+            "name": "user logs in as a \"store manager\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"store manager\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 38,
+            "name": "user should see \"Dashboard\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dashboard\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          },
+          {
+            "name": "@with_two_columns"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.150Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Parametrized login as driver",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;parametrized-login-as-\u003crole\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 37,
+            "name": "user logs in as a \"driver\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"driver\"",
+                  "offset": 18
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_as_a(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 38,
+            "name": "user should see \"Quick Launchpad\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Quick Launchpad\"",
+                  "offset": 16
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_should_see_page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@s_o"
+          },
+          {
+            "name": "@with_two_columns"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.179Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Invalid password",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-password",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 54,
+            "name": "user logs in with \"storemanager85\" username and \"wrong\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"storemanager85\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"wrong\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 55,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@negative_login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.230Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 64,
+        "name": "Invalid login with wrong and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong\" username and \"bad\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B20-182"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.271Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 65,
+        "name": "Invalid login with wrong213 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong213\" username and \"bad\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong213\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 42
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B20-182"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.296Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Invalid login with wrong32 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong32\" username and \"bad\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong32\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B20-182"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "common steps",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 7,
+            "name": "user is on the login page",
+            "match": {
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_is_on_the_login_page()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-27T04:29:49.329Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Invalid login with wrong12 and bad",
+        "description": "",
+        "id": "as-user-i-want-to-be-able-to-login-under-different-roles;invalid-login-with-\u003cusername\u003e-and-\u003cpassword\u003e;data-set;5",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.vytrack.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 59,
+            "name": "user logs in with \"wrong12\" username and \"bad\" password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong12\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"bad\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_logs_in_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.vytrack.step_definitions.Hooks.beforeStep()"
+                }
+              }
+            ],
+            "line": 60,
+            "name": "user verifies that \"Invalid user name or password.\" message is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid user name or password.\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.vytrack.step_definitions.LoginStepDefinitions.user_verifies_that_message_is_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@B20-183"
+          },
+          {
+            "name": "@negative_scenario_outline"
+          },
+          {
+            "name": "@B20-182"
+          }
+        ]
+      }
+    ],
+    "name": "As user I want to be able to login under different roles",
+    "description": "",
+    "id": "as-user-i-want-to-be-able-to-login-under-different-roles",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@B20-183",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  }
+]
